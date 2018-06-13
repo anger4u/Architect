@@ -1,0 +1,85 @@
+header {
+	border: 1px solid #fff;
+	border-left: none;
+	border-right: none;
+	color: $white;
+	background-color: $dark-bg;
+	padding: 	0 10px;
+	position: fixed;
+	width: 100%;	
+	z-index: 10;
+
+	.header-wrapper {
+		height: 70px;
+
+		.header-menu {
+			align-items: center;
+			margin: 0 auto;
+			height: 100%;
+
+			.mobile-menu,.head-search {
+				display: none;
+		}
+
+			.main-menu {
+			grid-template-columns: 170px auto 100px;
+			align-items: center;
+			
+				&__logo {
+					grid-template-columns: auto auto;
+					align-items: center;
+					justify-content: start;
+					p {
+						display: inline-block;
+						font-weight: 700;
+						font-size: 22px;
+						margin-left: 18px;
+					}
+				}
+
+				&__nav {
+					text-transform: uppercase;
+					font-weight: 600;
+					font-size: 15px;
+					width: 100%;
+					padding: 	0 55px 0 60px;
+
+					ul {
+						grid-template-columns: repeat(7, auto);
+						justify-content: space-around;
+
+						
+
+						li {
+							display: inline-block;
+						}
+					}
+
+				}
+
+				&__nets {
+					align-items: center;
+					justify-content: end;
+					li {
+						display: inline-block;
+						font-size: 17px;
+
+						.icon-twitter-bird {
+							color: $tw-col; 
+						}
+
+						.icon-facebook {
+							color: $fb-col;
+						}
+
+						.icon-gplus {
+							color: $gg-col;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+

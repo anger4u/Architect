@@ -1,0 +1,163 @@
+footer {
+
+	.foot-wrap__top .container,.foot-wrap__middle,.foot-wrap__bottom .container {
+		margin: 0 auto;
+	}
+
+	.nav-name {
+		padding-bottom: 20px;
+		border-bottom: 1px solid $nets-grey;
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	.foot-wrap__top {
+		width: 100%;
+		border-bottom: 1px solid $nets-grey;
+		background-color: $white;
+
+		.container {
+			width: 100%;
+			grid: auto/ 1fr auto;
+
+			div.ads-gr__wrap {
+				border-right: 1px solid $nets-grey;
+				padding: 20px $gutter 20px 0;
+				width: 100%;
+				
+				button.ads-gr {
+					width: 100%;
+					height: 90px;
+					background-image: $ads-bg-gr;
+					background-size: cover;
+					font-size: 22px;
+					font-weight: 600;
+				}
+			}
+			
+			div.adv {
+				width: 168px;
+				padding: 20px;
+				text-align: center;
+				font-weight: 600;
+			}
+		}
+	}
+
+	.foot-wrap__middle {
+		grid: auto/1fr 1fr 168px;
+		padding-top: $gutter;
+		padding-bottom: 70px;
+		grid-column-gap: $gutter;
+
+		.site-map {
+			&__list {
+				grid: repeat(8, auto)/repeat(3, auto);
+				padding-top: $gutter;
+				grid-gap: 10px;
+				font-size: 14px;
+
+				li {
+					a {
+						color: $footer-links;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+
+		.dont-miss {
+			&__ads {
+				padding-top: $gutter;
+				grid-gap: $gutter;
+
+				.ad {
+					grid: auto/auto auto;
+					grid-gap: 25px;
+				}
+
+				.ad__block {
+					margin-top: -5px;
+
+					h3,p {
+						color: $footer-links;
+					}
+
+					h3 {
+						font-weight: 600;
+						font-size: 15px;
+						margin-bottom: 10px;
+					}
+
+					p {
+						font-size: 13px;
+					}
+				}
+			}
+		}
+
+		.follow {
+			&__buts {
+				padding-top: $gutter;
+				grid-gap: 20px;
+
+				&-twit,&-face,&-goog,&-inst {
+					height: 36px;
+					color: $white;
+					font-size: 14px;
+					font-weight: 600;
+					text-align: left;
+					border: none;
+					cursor: pointer;
+
+					i {
+						margin-right: 10px;
+					}
+				}
+				
+				&-twit {
+					background-color: $tw-col;
+
+					i {
+						font-size: 16px;
+					}
+				}
+
+				&-face {
+					background-color: $fb-col;
+
+				}
+
+				&-goog {
+					background-color: $gg-col;
+
+				}
+
+				&-inst {
+					background-color: $in-col;
+
+				}
+
+			}
+		}
+	}
+
+	.foot-wrap__bottom {
+		background-color: $copyright-bg;
+
+		.container {
+			grid: 80px/auto auto;
+			justify-content: space-between;
+			align-items: center;
+
+			.policy {
+				color: $white;
+				font-size: 13px;
+			}
+
+		}
+	}
+	
+}
+
+
